@@ -1,0 +1,29 @@
+CREATE TABLE pets(id INTEGER PRIMARY KEY, animal TEXT, cost_in_dollars INTEGER);
+
+INSERT into pets VALUES(1,"ferrets", 135);
+INSERT into pets VALUES(2, "cats", 45);
+INSERT into pets VALUES(3, "fish", 1);
+INSERT into pets VALUES(4, "dogs", 100);
+INSERT into pets VALUES(5, "kangaroos", 2000);
+INSERT into pets VALUES(6, "dragons", 1600);
+INSERT into pets VALUES(7, "birds", 75);
+INSERT into pets VALUES(8, "worms", 3);
+INSERT into pets VALUES(9, "bugs", 2);
+INSERT into pets VALUES(10, "gerbels", 49);
+INSERT into pets VALUES(11, "pigs", 85);
+INSERT into pets VALUES(12, "horses", 900);
+INSERT into pets VALUES(13, "ostrich", 3000);
+INSERT into pets VALUES(14, "turtle", 12);
+INSERT into pets VALUES(15, "hippo", 9000);
+
+SELECT * FROM pets WHERE cost_in_dollars > 100
+GROUP BY cost_in_dollars;
+
+
+--Created a table listing cost of animals at a pet store
+CREATE TABLE pets(id INTEGER PRIMARY KEY, animal TEXT, cost_in_dollars INTEGER);
+
+
+--Select from groups animals that cost more than $100
+SELECT * FROM pets WHERE cost_in_dollars > 100
+GROUP BY cost_in_dollars;
